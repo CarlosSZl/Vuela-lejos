@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Vuela Lejos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            background-color: #fffFff;
+        }
+
+        .card.a {
+            cursor: pointer;
+            color: gray;
+            text-decoration: none;
+        }
+
+        .card.img {
+            height: 200px;
+        }
+
+        p.content {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card.h2 {
+            margin: 0 0;
+        }
+
+        .card {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            border: 1px solid#1b0088;
+            padding: 25px;
+            margin: 10px 0;
+            background-color: #fff;
+            max-width: 400px;
+            white-space: nowrap;
+            overflow: hidden;
+            transition: all 0.2 ease-in-out;
+
+            &:hover {
+                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.24);
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="img/logo.jpeg" width="220" class="d-inline-block align-top" alt="">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: bold; cursor: pointer;" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: bold" href="destinos.html">Destinos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" style="font-weight: bold" href="hoteles.html">Hoteles</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" style="font-weight: bold" href="ayuda.html">Ayuda</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" style="font-weight: bold" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div
+        style="text-align: center; margin: auto; width: 100%; display: block; height: 300px; background-image: url('img/vuelo.jpg'); background-size: cover; background-repeat: no-repeat;">
+    </div>
+
+    <div style="width: 90%; display: block; overflow: hidden; margin: auto; max-width: 1100px;">
+        <div style="width: 100%; display: inline-block; margin: 1px solid gray; padding: 20px;">
+            <form>
+                <div class="mb-3" style="width: 20%; display: inline-block; margin:20px">
+                    <label for="input1" class="form-label">Origen</label>
+                    <input type="input" class="form-control" id="input1" aria-describedby="input1">
+                </div>
+                <div class="mb-3" style="width: 20%; display: inline-block; margin:20px">
+                    <label for="input2" class="form-label">destino</label>
+                    <input type="input" class="form-control" id="input2" aria-describedby="input2">
+                </div>
+                <div class="mb-3" style="width: 20%; display: inline-block; margin:20px">
+                    <label for="input2" class="form-label">Fecha ida</label>
+                    <input size="16" type="text" class="form-control" id="datetime" readonly>
+                </div>
+                <div class="mb-3" style="width: 20%; display: inline-block; margin: 20px">
+                    <label for="input2" class="form-label">Regreso</label>
+                    <input size="16" type="text" class="form-control" id="datetime" readonly>
+                </div>
+
+                <button type="submit" class="btn btn-primary"
+                    style="float: right; background-color: #1b0088;">Submit</button>
+            </form>
+        </div>
+
+    </div>
+    <div style="width: 100%; display: 
+    block; overflow: hidden; margin: 20px 0 30px 0;">
+        <h3 style="display: block; width: 500px; margin: auto; text-align: center; border-bottom: 1px solid #1b0088; font-weight: bold;">
+            PROMOCIONES LIMITADAS</h3>
+    </div>
+
+    <div style="width: 90%; display: block; overflow: hidden; margin: auto; max-width: 1100px;">
+        <div style="width: 100%; display: inline-block; margin: 1px solid gray; padding: 20px;">
+
+            <div class="card" style="width: 46%;  margin-left: 50px; display: inline-block;">
+                <img class="card-img-top" src="img/destino1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">CALAMA</h5>
+                    <p class="card-text">CLP 20.000</p>
+                    <a href="#" class="btn btn-primary">IR</a>
+                </div>
+            </div>
+            <div class="card" style="width: 46%; margin-left: 50px; display: inline-block;">
+                <img class="card-img-top" src="img/destino2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">LA SERENA</h5>
+                    <p class="card-text">CLP 15.000</p>
+                    <a href="#" class="btn btn-primary">ir</a>
+                </div>
+            </div>
+            <div class="card" style="width: 46%; margin-left: 50px; display: inline-block;">
+                <img class="card-img-top" src="img/destino3.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">ANTOFAGASTA</h5>
+                    <p class="card-text">CLP 20.000</p>
+                    <a href="#" class="btn btn-primary">IR</a>
+                </div>
+            </div>
+            <div class="card" style="width: 46%; margin-left: 50px; display: inline-block;">
+                <img class="card-img-top" src="img/destino4.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">PUERTO MONTT</h5>
+                    <p class="card-text">CLP 20.000</p>
+                    <a href="#" class="btn btn-primary">ir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+
+        <div class="footer-copyright text-center py-3">
+            <!--<img class="logoPrincipal" style="width: 100px;" src="assets/img/logo1.jpeg">&nbsp;&nbsp;
+        <img class="logoPrincipal" style="width: 150px;" src="assets/img/logo2.jpeg">&nbsp;&nbsp;-->
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            © 2023 Copyright: Vuela Lejos
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>

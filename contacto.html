@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Vuela Lejos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+        
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #fffFff;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="img/logo.jpeg" width="220" class="d-inline-block align-top" alt="">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: bold; cursor: pointer;" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: bold" href="destinos.html">Destinos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" style="font-weight: bold" href="hoteles.html">Hoteles</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" style="font-weight: bold" href="ayuda.html">Ayuda</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" style="font-weight: bold" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="width: 100%; display: block; overflow: hidden; margin: 20px 0 30px 0;">
+        <h3
+            style="display: block; width: 500px; margin: auto; text-align: center; border-bottom: 1px solid #1b0088; font-weight: bold;">
+            INFORMACION DE CONTACTO</h3>
+    </div>
+
+    <div style="width: 90%; display: block; overflow: hidden; margin: auto; max-width: 1100px;">
+        <div style="width: 45%; display: inline-block; margin: 1px solid gray">
+            <div style="width: 100%; height: 60px; background-color: #f6f6f8; font-size: 13px;
+        padding: 18px 0 13px; font-family: 'Open Sans', arial, tahoma; margin-bottom: 40px;">
+                <h3 style="margin-left: 25px; display: inline-block; font-weight: bold;">Escríbenos a Vuela Lejos</h3>
+            </div>
+            <div class="form-group" style="display: inline-block; width: 47%; margin-right: 25px;">
+                <label for="nombre">Nombre:</label><span style="color: red;">*</span>
+                <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="form-group" style="display: inline-block; width: 47%;">
+                <label for="apellido">Apellido:</label><span style="color: red;">*</span>
+                <input type="text" class="form-control" id="apellido">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label><span style="color: red;">*</span>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group" style="display: inline-block; width: 100%;">
+                <label for="telefono">Teléfono:</label><span style="color: red;">*</span>
+                <input type="text" class="form-control" id="telefono">
+            </div>
+            <div class="form-group" style="display: inline-block; width: 100%; text-align: center;">
+                <label for="mensaje">Mensaje:</label><span style="color: red;">*</span>
+                <textarea id="message" class="form-control" name="message" rows="4" cols="50"></textarea>
+            </div>
+            <button (click)="#" class="btn btn-info"
+                style="float: left; background-color:#1b0088; margin: 10px 10px 10px 0; color: #ffffff;">ENVIAR</button>
+
+            <div class="form-group" style="display: inline-block; width: 100%; text-align: left;">
+                <div style="width: 100%; margin-top: 50px;">
+                    <a href="https://pinterest.com" target="_blank"><i class="fa fa-pinterest-p" style="font-size:33px;color:#1b0088; margin-left: 10px; float: left;"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square" style="font-size:35px;color:#1b0088; margin-left: 10px; float: left;"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"  style="font-size:37px;color:#1b0088; margin-left: 10px; float: left;"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div style="width: 45%; display: inline-block; float: right;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.8605261259127!2d-72.6494281240618!3d-38.9271652717177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614dec58f5d709b%3A0xfdcdf026ce8a1f31!2sAeropuerto%20Araucan%C3%ADa!5e0!3m2!1ses-419!2scl!4v1693588266416!5m2!1ses-419!2scl"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
+            <div class="form-group" style="display: inline-block; width: 100%; text-align: left; margin-top: 20px">
+                <i class="fa fa-map-marker" style="font-size:25px;color:#1b0088; margin-left: 10px; float: left; margin-right: 12px;"></i>
+                <label style="margin-top: 10px; color: gray;">Longitudinal Sur km 692, Freire</label>
+            </div>
+
+            <div class="blockquote">
+                <p class="mb-0">SERVICIO AL CLIENTE:</p>
+            </div>
+            <div class="form-group" style="display: inline-block; width: 100%; text-align: left;">
+                <i class="fa fa-whatsapp"
+                    style="font-size:25px;color:#1b0088; margin-left: 10px; float: left; margin-right: 12px;"></i><label
+                    style="margin-top: 10px; color: gray;"><a href="tel:+5696040090">+5696040090</a></label>
+            </div>
+            <div class="form-group" style="display: inline-block; width: 100%; text-align: left;">
+                <i class="fa fa-whatsapp"
+                    style="font-size:25px;color:#1b0088; margin-left: 10px; float: left; margin-right: 12px;"></i><label
+                    style="margin-top: 10px; color: gray;"><a href="tel:+5696040091">+5696040091</a></label>
+            </div>
+            <div class="form-group" style="display: inline-block; width: 100%; text-align: left; ">
+                <i class="fa fa-google"
+                    style="font-size:25px;color:#1b0088; margin-left: 10px; float: left; margin-right: 12px;"></i><label
+                    style="margin-top: 10px; color: gray;"><a href="mailto:contacto@aerolinea.cl">contacto@aerolinea.cl</a></label>
+            </div>
+
+            <div class="blockquote">
+                <p class="mb-0">Horario de atención:</p>
+            </div>
+
+            <div>
+                <P style="color: gray;">LUNES A SABADO: 08:00 A 21:00</P>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+
+        <div class="footer-copyright text-center py-3">
+            <!--<img class="logoPrincipal" style="width: 100px;" src="assets/img/logo1.jpeg">&nbsp;&nbsp;
+        <img class="logoPrincipal" style="width: 150px;" src="assets/img/logo2.jpeg">&nbsp;&nbsp;-->
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            © 2023 Copyright: Vuela Lejos
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>

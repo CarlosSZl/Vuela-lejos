@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Vuela Lejos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #fffFff;
+        }
+
+        .card.a {
+            cursor: pointer;
+            color: gray;
+            text-decoration: none;
+        }
+
+        .card.img {
+            height: 200px;
+        }
+
+        p.content {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card.h2 {
+            margin: 0 0;
+        }
+
+        .card {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            border: 1px solid#1b0088;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #fff;
+            /* max-width: 400px; */
+            white-space: nowrap;
+            overflow: hidden;
+            transition: all 0.2 ease-in-out;
+
+            &:hover {
+                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.24);
+                cursor: pointer;
+            }
+        }
+
+        .card2 {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #fff;
+            /* max-width: 400px; */
+            white-space: nowrap;
+            overflow: hidden;
+            transition: all 0.2 ease-in-out;
+
+            &:hover {
+                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.24);
+                cursor: pointer;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="img/logo.jpeg" width="220" class="d-inline-block align-top" alt="">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: bold; cursor: pointer;" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: bold" href="destinos.html">Destinos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" style="font-weight: bold" href="hoteles.html">Hoteles</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" style="font-weight: bold" href="ayuda.html">Ayuda</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" style="font-weight: bold" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="width: 100%; display: 
+    block; overflow: hidden; margin: 20px 0 30px 0;">
+        <h3
+            style="display: block; width: 500px; margin: auto; text-align: center; border-bottom: 1px solid #1b0088; font-weight: bold;">
+            HOTELES</h3>
+    </div>
+
+    <div style="width: 90%; display: block; overflow: hidden; margin: auto; max-width: 1100px;">
+        <div style="width: 100%; display: inline-block; margin: 1px solid gray; padding: 20px;">
+
+            <div class="card" style="width: 100%; display: block;">
+                <div style="display: inline-block; width: 30%; height: 200px;">
+                    <img class="card-img-top" src="img/hotel1.webp" alt="Card image cap" style="width: 100%; height: 100%;">
+                </div>
+                <div style="display: inline-block; ">
+                    <div class="card-body">
+                        <h5 class="card-title">HOTEL PAMPA</h5>
+                        <p class="card-text">calama</p>
+                        <p class="card-text">EXCELENTE</p>
+                    </div>
+                </div>
+                <div class="card2" style="display: inline-block; float: right; width: 30%;">
+                    <div class="card-body">
+                        <h5 class="card-title">HOTEL PAMPA</h5>
+                        <p class="card-text">habitaciones disponibles</p>
+                        <a href="#" class="btn btn-primary">VER</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 100%; display: block;">
+                <div style="display: inline-block; width: 30%; height: 200px;">
+                    <img class="card-img-top" src="img/hotel2.webp" alt="Card image cap" style="width: 100%; height: 100%;">
+                </div>
+                <div style="display: inline-block; ">
+                    <div class="card-body">
+                        <h5 class="card-title">HOTEL BLOCK</h5>
+                        <p class="card-text">santiago</p>
+                        <p class="card-text">EXCELENTE</p>
+                    </div>
+                </div>
+                <div class="card2" style="display: inline-block; float: right; width: 30%;">
+                    <div class="card-body">
+                        <h5 class="card-title">HOTEL BLOCKS</h5>
+                        <p class="card-text">habitaciones disponibles</p>
+                        <a href="#" class="btn btn-primary">VER</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 100%; display: block;">
+                <div style="display: inline-block; width: 30%; height: 200px;">
+                    <img class="card-img-top" src="img/hotel3.webp" alt="Card image cap" style="width: 100%; height: 100%;">
+                </div>
+                <div style="display: inline-block; ">
+                    <div class="card-body">
+                        <h5 class="card-title">HOTEL RIO</h5>
+                        <p class="card-text">valdivia</p>
+                        <p class="card-text">EXCELENTE</p>
+                    </div>
+                </div>
+                <div class="card2" style="display: inline-block; float: right; width: 30%;">
+                    <div class="card-body">
+                        <h5 class="card-title">HOTEL RIO</h5>
+                        <p class="card-text">habitaciones disponibles</p>
+                        <a href="#" class="btn btn-primary">VER</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 100%; display: block;">
+                <div style="display: inline-block; width: 30%; height: 200px;">
+                    <img class="card-img-top" src="img/hotel4.webp" alt="Card image cap" style="width: 100%; height: 100%;">
+                </div>
+                <div style="display: inline-block; ">
+                    <div class="card-body">
+                        <h5 class="card-title">HOTEL VISTAMAR</h5>
+                        <p class="card-text">puerto montt</p>
+                        <p class="card-text">EXCELENTE</p>
+                    </div>
+                </div>
+                <div class="card2" style="display: inline-block; float: right; width: 30%;">
+                    <div class="card-body">
+                        <h5 class="card-title">HOTEL VISTAMAR</h5>
+                        <p class="card-text">habitaciones disponibles</p>
+                        <a href="#" class="btn btn-primary">VER</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+
+        <div class="footer-copyright text-center py-3">
+            <!--<img class="logoPrincipal" style="width: 100px;" src="assets/img/logo1.jpeg">&nbsp;&nbsp;
+        <img class="logoPrincipal" style="width: 150px;" src="assets/img/logo2.jpeg">&nbsp;&nbsp;-->
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            © 2023 Copyright: Vuela Lejos
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>
